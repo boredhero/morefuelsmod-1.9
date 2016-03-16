@@ -2,7 +2,6 @@ package com.bored.morefuelsmod;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.IFuelHandler;
@@ -185,9 +184,10 @@ public class Fuels implements IFuelHandler{
 					//already written writable book
 					return 300;
 				}
-				if (fuel.func_77973_b() == Items.field_151134_bR){
-					return 300;
-				}
+				//Enchanted books. Commented because illogical. May be re implemented with config default false later.
+				//if (fuel.getItem() == Items.enchanted_book){
+				//	return 300;
+				//}
 				if (fuel.func_77973_b() == Items.field_151108_aI){
 					return 1000;
 				}
@@ -234,10 +234,10 @@ public class Fuels implements IFuelHandler{
 				if (fuel.func_77973_b() == Items.field_179565_cj){
 					return 700;
 				}
-				//This is the insanely powerful easter egg LMAO look at those ticks tho
-				if (fuel.func_77973_b() == Items.field_151141_av){
-					return 1000000;
-				}
+				//Easter egg. Commented for now....because its pretty darn illogical tbh.
+				//if (fuel.getItem() == Items.saddle){
+				//	return 1000000;
+				//}
 				//Now for some weird misc. things
 				if (fuel.func_77973_b() == Items.field_151059_bz){
 					return 350;
