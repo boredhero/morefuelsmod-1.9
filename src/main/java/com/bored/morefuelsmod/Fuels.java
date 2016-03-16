@@ -26,9 +26,9 @@ public class Fuels implements IFuelHandler{
 					return 300;
 				}
 				//Sponges. Wet sponge burns too, need to figure out how to disable that.
-				if(fuel.getItem() == Item.getItemFromBlock(Blocks.sponge)){
-				}
-				
+				//if(fuel.getItem() == Item.getItemFromBlock(Blocks.sponge)){
+				//}
+				//Removed until further notice. Will be re added but must be enabled by config flag.
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.web)){
 					return 150;
 				}
@@ -292,4 +292,3 @@ public class Fuels implements IFuelHandler{
 				return 0;
 	}
 }
-		
