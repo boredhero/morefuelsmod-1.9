@@ -289,6 +289,10 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.leather_leggings){
 					return 1750;
 				}
+				//Added chorus plant as burnable for 1.9 :)
+				if (fuel.getItem() == Item.getItemFromBlock(Blocks.chorus_plant)){
+					return 800;
+				}
 				return 0;
 	}
 }
