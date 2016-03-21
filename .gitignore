@@ -14,9 +14,16 @@ out
 .idea
 
 # gradle
-build
-.gradle
 
 # other
 eclipse
 run
+
+/MinecraftForge-Credits.txt
+/MinecraftForge-License.txt
+/Paulscode SoundSystem CodecIBXM License.txt
+/Paulscode IBXM Library License.txt
+/LICENSE-fml.txt
+/CREDITS-fml.txt
+/forge-1.8.9-11.15.1.1764-mdk_Server.launch
+/forge-1.8.9-11.15.1.1764-mdk_Client.launch
