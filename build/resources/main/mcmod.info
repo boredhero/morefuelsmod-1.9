@@ -1,0 +1,17 @@
+[
+{
+  "modid": "morefuelsmod",
+  "name": "More Fuels Mod",
+  "description": "A mod that makes more items usable as fuel.",
+  "version": "1.2.2",
+  "mcversion": "1.9",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["boredherobrine13"],
+  "credits": "boredherobrine13",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+
