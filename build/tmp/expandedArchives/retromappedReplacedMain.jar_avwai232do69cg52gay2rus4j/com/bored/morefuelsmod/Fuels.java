@@ -19,7 +19,7 @@ public class Fuels implements IFuelHandler{
 				//}
 				//Note on timings, 20 = about 1 second in ticks.
 				if(fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150330_I)){
-					return 100;
+					return 200;
 				}
 				if(fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150434_aF)){
 					return 300;
@@ -29,17 +29,17 @@ public class Fuels implements IFuelHandler{
 				//}
 				//Removed until further notice. Will be re added but must be enabled by config flag.
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150321_G)){
-					return 150;
+					return 160;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150442_at)){
-					return 50;
+					return 120;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150349_c)){
-					return 50;
+					return 100;
 				}
 				//Fix for tall grass and all other doubly tall plants
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150398_cm)){
-					return 100;
+					return 200;
 				}
 				//Flowers start here
 				//This code SHOULD cover all flowers.
@@ -51,92 +51,100 @@ public class Fuels implements IFuelHandler{
 				}
 				//Flowers end here
 				if (fuel.func_77973_b() == Items.field_151160_bD){
-					return 200;
+					return 900;
 				}
 				if (fuel.func_77973_b() == Items.field_151104_aV){
-					return 500;
+					return 1500;
 				}
 				if (fuel.func_77973_b() == Items.field_151159_an){
-					return 200;
+					return 1000;
 				}
 				if (fuel.func_77973_b() == Items.field_151155_ap){
-					return 400;
+				//Actual calculation here was 633.33~ but I rounded.
+					return 640;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150468_ap)){
-					return 400;
+				//Actual calculation here was 233.33~ but I rounded.
+					return 240;
 				}
 				//Rails start here
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150448_aq)) {
-					return 400;
+				//Actual calculation here was 13.75  but I rounded.
+					return 20;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150408_cc)){
-					return 400;
+				//Actual calculation here was 73.33~ but I rounded.
+					return 80;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150319_E)){
-					return 400;
+				//Actual calculation here was 23.33~ but I rounded.
+					return 20;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150318_D)){
-					return 400;
+					return 40;
 				}
 				//Pistons start here
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150331_J)){
-					return 400;
+					return 1020;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150320_F)){
-					return 400;
+					return 1040;
 				}
 				//Pistons end here
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150395_bd)){
-					return 200;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150392_bi)){
-					return 200;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150479_bC)){
-					return 50;
+				//Actual calculation here was 210 but I rounded.
+					return 220;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150407_cf)){
-					return 400;
+					return 900;
 				}
 				//Wool and Carpet handled here
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150404_cg)){
-					return 250;
+				//Actual calculation here was 133.33~ but I rounded.
+					return 140;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150325_L)){
-					return 500;
+					return 200;
 				}
 				//Arrows handled here
 				if (fuel.func_77973_b() == Items.field_151032_g){
-					return 50;
+				//Actual calculation here was 55 but I rounded
+					return 60;
 				}
 				if (fuel.func_77973_b() == Items.field_151008_G){
-					return 50;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Items.field_151015_O){
-					return 70;
+					return 100;
 				}
 				//Seeds handled here, all 60 tick burn times
 				if (fuel.func_77973_b() == Items.field_151014_N){
-					return 60;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Items.field_151081_bc){
-					return 60;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Items.field_151080_bb){
-					return 60;
+					return 100;
 				}
-				//Torches handled here all 130 tick burn times
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150478_aa)){
-					return 130;
+				//Actual calculation here was 30 but I rounded.
+					return 40;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150429_aA)){
-					return 130;
+					return 120;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150437_az)){
-					//just in case someone gets one of these in their inventory..
-					return 130;
+				//just in case someone gets one of these in their inventory..
+					return 120;
 				}
-				//Doors! All 600 ticks!
+				//Doors! Try the back one ;)
 				if (fuel.func_77973_b() == Items.field_179570_aq){
 					return 600;
 				}
@@ -158,65 +166,83 @@ public class Fuels implements IFuelHandler{
 				}
 				//Buttons
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150471_bO)){
-					return 50;
+					return 300;
 				}
 				if (fuel.func_77973_b() == Items.field_151054_z){
-					return 80;
+				//Actual calculation here was 225 but I rounded.
+					return 240;
 				}
+				//Updated boat handler to 1.9 to include different woods.
 				if (fuel.func_77973_b() == Items.field_151124_az){
-					return 700;
+					return 1500;
 				}
+				if (fuel.func_77973_b() == Items.field_185153_aK){
+					return 1500;
+				}
+				if (fuel.func_77973_b() == Items.field_185151_aI){
+					return 1500;
+				}
+				if (fuel.func_77973_b() == Items.field_185154_aL){
+					return 1500;
+				}
+				if (fuel.func_77973_b() == Items.field_185152_aJ){
+					return 1500;
+				}
+				if (fuel.func_77973_b() == Items.field_185150_aH){
+					return 1500;
+				}
+				//End of new boat handling procedure
 				if (fuel.func_77973_b() == Items.field_151120_aE){
-					return 70;
+					return 300;
 				}
 				if (fuel.func_77973_b() == Items.field_151121_aF){
-					return 100;
+					return 300;
 				}
 				//Books, all burn times 300 ticks.
 				if (fuel.func_77973_b() == Items.field_151122_aG) {
-					return 300;
+					return 1000;
 				}
 				if (fuel.func_77973_b() == Items.field_151099_bA){
 					//unwritten writable book
-					return 300;
+					return 1120;
 				}
 				if (fuel.func_77973_b() == Items.field_151164_bB){
 					//already written writable book
-					return 300;
+					return 1120;
 				}
-				//Enchanted books. Commented because illogical. May be re implemented with config default false later.
-				//if (fuel.getItem() == Items.enchanted_book){
-				//	return 300;
-				//}
 				if (fuel.func_77973_b() == Items.field_151108_aI){
-					return 1000;
+				//return time may not be logical.
+				//need to investigate vanilla chest burn time.
+				//might either adjust vanilla chest burn time or
+			    //nerf burn time on this item.
+					return 2500;
 				}
 				//Maps, all 200 ticks
 				if (fuel.func_77973_b() == Items.field_151148_bJ){
-					return 200;
+					return 2500;
 				}
 				if (fuel.func_77973_b() == Items.field_151098_aY){
-					return 200;
+					return 2500;
 				}
-				//Fishing Rods and Carrot on a Stick, both 500 ticks
+				//Fishing Rods and Carrot on a Stick.
 				if (fuel.func_77973_b() == Items.field_151112_aM){
-					return 500;
+					return 320;
 				}
 				if (fuel.func_77973_b() == Items.field_151146_bM){
-					return 500;
+					return 340;
 				}
 				//This handles ferns, also redundant for some items like dead bush
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150329_H)){
-					return 50;
+					return 200;
 				}
 				//Mushroom time! Don't get high off the fumes from burning them...
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150338_P)){
 					//This covers the brown mushroom inventory item
-					return 50;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150337_Q)){
 					//This covers the red mushroom inventory item
-					return 50;
+					return 100;
 				}
 				//EXPERIMENTAL SHROOM COMPATIBILITY
 				//Never actually bothered to get these items in inventory to test
@@ -224,15 +250,15 @@ public class Fuels implements IFuelHandler{
 				//But someone might need it...so I'll be nice and accommodate them.
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150420_aW)){
 					//This covers the giant brown mushroom BLOCK in giant mushrooms
-					return 500;
+					return 200;
 				}
 				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150419_aX)){
 					//This covers the giant red mushroom BLOCK in giant mushrooms
-					return 500;
+					return 200;
 				}
 				//Armor stands
 				if (fuel.func_77973_b() == Items.field_179565_cj){
-					return 700;
+					return 620;
 				}
 				//Easter egg. Commented for now....because its pretty darn illogical tbh.
 				//if (fuel.getItem() == Items.saddle){
@@ -240,20 +266,30 @@ public class Fuels implements IFuelHandler{
 				//}
 				//Now for some weird misc. things
 				if (fuel.func_77973_b() == Items.field_151059_bz){
-					return 350;
+				//Actual calculation here was 1466.66~ but I rounded.
+					return 1480;
 				}
 				if (fuel.func_77973_b() == Items.field_151154_bQ){
-					return 350;
+					return 3220;
 				}
 				if (fuel.func_77973_b() == Items.field_151152_bP){
-					return 500;
+					return 5120;
 				}
 				if (fuel.func_77973_b() == Items.field_151016_H){
-					return 250;
+					return 1600;
+				}
+				if (fuel.func_77973_b() == Items.field_151065_br){
+					return 1200;
+				}
+				if (fuel.func_77973_b() == Items.field_151064_bs){
+					return 2000;
+				}
+				if (fuel.func_77973_b() == Items.field_151073_bk){
+					return 2000;
 				}
 				//Attempt to implement spawn eggs as being burnable...idk why.
 				if (fuel.func_77973_b() == Items.field_151063_bx){
-					return 1000; //After all..they are valuable.
+					return 5000;
 				}
 				//Stupid stuff made burn-able just so we can get rid of it.
 				if (fuel.func_77973_b() == Items.field_151170_bI){
@@ -266,7 +302,7 @@ public class Fuels implements IFuelHandler{
 					return 100;
 				}
 				if (fuel.func_77973_b() == Items.field_151071_bq){
-					return 200;
+					return 220;
 				}
 				if (fuel.func_77973_b() == Items.field_179556_br){
 					return 200;
@@ -275,19 +311,32 @@ public class Fuels implements IFuelHandler{
 				//All leather items ticks are calculated by multiplying the base tick.
 				//Working on being able to burn damaged leather.
 				if (fuel.func_77973_b() == Items.field_151116_aA){
-					return 250;
+					return 100;
 				}
 				if (fuel.func_77973_b() == Items.field_151021_T){
-					return 1000;
+					return 400;
 				}
 				if (fuel.func_77973_b() == Items.field_151027_R){
-					return 2000;
+					return 800;
 				}
 				if (fuel.func_77973_b() == Items.field_151024_Q){
-					return 1250;
+					return 500;
 				}
 				if (fuel.func_77973_b() == Items.field_151026_S){
-					return 1750;
+					return 700;
+				}
+				//Adding 1.9 Stuff
+				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_185765_cR)){
+					return 600;
+				}
+				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_185766_cS)){
+					return 600;
+				}
+				if (fuel.func_77973_b() == Items.field_185159_cQ){
+					return 1820;
+				}
+				if (fuel.func_77973_b() == Items.field_185157_bK){
+					return 2060;
 				}
 				return 0;
 	}
