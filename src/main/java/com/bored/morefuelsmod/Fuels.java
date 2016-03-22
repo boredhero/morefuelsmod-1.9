@@ -335,6 +335,10 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.dragon_breath){
 					return 2060;
 				}
+				//Adding TNT
+				if (fuel.getItem() == Item.getItemFromBlock(Blocks.tnt)){
+					return 8080;
+				}
 				return 0;
 	}
 }
