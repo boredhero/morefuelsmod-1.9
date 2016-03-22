@@ -211,11 +211,8 @@ public class Fuels implements IFuelHandler{
 					return 1120;
 				}
 				if (fuel.func_77973_b() == Items.field_151108_aI){
-				//return time may not be logical.
-				//need to investigate vanilla chest burn time.
-				//might either adjust vanilla chest burn time or
-			    //nerf burn time on this item.
-					return 2500;
+				//Vanilla chest only burns for 300 Ticks.
+					return 400;
 				}
 				//Maps, all 200 ticks
 				if (fuel.func_77973_b() == Items.field_151148_bJ){
