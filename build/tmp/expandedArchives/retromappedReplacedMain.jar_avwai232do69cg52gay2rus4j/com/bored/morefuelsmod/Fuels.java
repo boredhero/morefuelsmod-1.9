@@ -335,6 +335,14 @@ public class Fuels implements IFuelHandler{
 				if (fuel.func_77973_b() == Items.field_185157_bK){
 					return 2060;
 				}
+				//Adding TNT
+				if (fuel.func_77973_b() == Item.func_150898_a(Blocks.field_150335_W)){
+					return 8080;
+				}
+				//Adding Minecart with TNT
+				if (fuel.func_77973_b() == Items.field_151142_bV){
+					return 8180;
+				}
 				return 0;
 	}
 }
