@@ -172,9 +172,26 @@ public class Fuels implements IFuelHandler{
 				//Actual calculation here was 225 but I rounded.
 					return 240;
 				}
+				//Updated boat handler to 1.9 to include different woods.
 				if (fuel.getItem() == Items.boat){
 					return 1500;
 				}
+				if (fuel.getItem() == Items.acacia_boat){
+					return 1500;
+				}
+				if (fuel.getItem() == Items.birch_boat){
+					return 1500;
+				}
+				if (fuel.getItem() == Items.dark_oak_boat){
+					return 1500;
+				}
+				if (fuel.getItem() == Items.jungle_boat){
+					return 1500;
+				}
+				if (fuel.getItem() == Items.spruce_boat){
+					return 1500;
+				}
+				//End of new boat handling procedure
 				if (fuel.getItem() == Items.reeds){
 					return 300;
 				}
