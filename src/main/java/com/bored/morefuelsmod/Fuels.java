@@ -335,6 +335,9 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.shield){
 					return 1820;
 				}
+				if (fuel.getItem() == Items.dragon_breath){
+					return 2060;
+				}
 				return 0;
 	}
 }
