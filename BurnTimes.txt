@@ -76,6 +76,7 @@ Leather Tunic  = 800  Ticks or 40  Seconds
 Leather Helmet = 500  Ticks or 25  Seconds
 Leather Pants  = 700  Ticks or 35  Seconds
 Chorus Plant   = 600  Ticks or 30  Seconds
+Chorus Flower  = 600  Ticks or 30  Seconds
 Shields        = 1820 Ticks or 91  Seconds
 
 

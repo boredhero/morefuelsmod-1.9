@@ -306,6 +306,9 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Item.getItemFromBlock(Blocks.chorus_plant)){
 					return 600;
 				}
+				if (fuel.getItem() == Item.getItemFromBlock(Blocks.chorus_flower)){
+					return 600;
+				}
 				if (fuel.getItem() == Items.shield){
 					return 1820;
 				}
