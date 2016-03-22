@@ -64,6 +64,7 @@ Firework Star  = 3220 Ticks or 161 Seconds
 Firework       = 5120 Ticks or 256 Seconds
 Gunpowder      = 1600 Ticks or 80  Seconds
 Blaze Powder   = 1200 Ticks or 60  Seconds
+Magma Cream    = 2000 Ticks or 100 Seconds
 Spawn Eggs     = 5000 Ticks or 250 Seconds
 Poison Potato  = 100  Ticks or 5   Seconds
 Rotton Flesh   = 100  Ticks or 5   Seconds
