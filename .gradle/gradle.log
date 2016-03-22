@@ -13,7 +13,7 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
@@ -33,8 +33,7 @@
 :reobfJar
 :extractRangemapReplacedMain
 C:\Users\Noah\Desktop\Code\More Fuels Mod Development Builds\copy\morefuelsmod\build\sources\main\java
-:retromapReplacedMain
-remapping source...
+:retromapReplacedMain UP-TO-DATE
 :sourceJar
 :assemble
 :check UP-TO-DATE
@@ -42,4 +41,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 15.512 secs
+Total time: 6.524 secs
