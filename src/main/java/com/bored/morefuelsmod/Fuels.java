@@ -249,7 +249,8 @@ public class Fuels implements IFuelHandler{
 				//}
 				//Now for some weird misc. things
 				if (fuel.getItem() == Items.fire_charge){
-					return 1600;
+				//Actual calculation here was 1466.66~ but I rounded.
+					return 1480;
 				}
 				if (fuel.getItem() == Items.firework_charge){
 					return 3220;
