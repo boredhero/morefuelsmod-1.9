@@ -82,3 +82,4 @@ Chorus Flower  = 600  Ticks or 30  Seconds
 Shields        = 1820 Ticks or 91  Seconds
 Dragons Breath = 2060 Ticks or 103 Seconds
 TNT            = 8080 Ticks or 404 Seconds
+TNT Minecart   = 8180 Ticks or 409 Seconds
