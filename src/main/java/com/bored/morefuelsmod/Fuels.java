@@ -267,6 +267,9 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.magma_cream){
 					return 2000;
 				}
+				if (fuel.getItem() == Items.ghast_tear){
+					return 2000;
+				}
 				//Attempt to implement spawn eggs as being burnable...idk why.
 				if (fuel.getItem() == Items.spawn_egg){
 					return 5000;
