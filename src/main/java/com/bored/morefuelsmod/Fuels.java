@@ -260,7 +260,9 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == Items.gunpowder){
 					return 1600;
 				}
-				//Blaze powder return 1600 tbal
+				if (fuel.getItem() == Items.blaze_powder){
+					return 1200;
+				}
 				//Attempt to implement spawn eggs as being burnable...idk why.
 				if (fuel.getItem() == Items.spawn_egg){
 					return 5000;
