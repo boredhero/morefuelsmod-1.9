@@ -16,7 +16,7 @@ import com.bored.morefuelsmod.Fuels;
 @Mod(modid = Main.MODID, version = Main.VERSION, name=Main.MODNAME)
 public class Main {
 
-	public static final String MODID = "morefuelsmod";
+	public static final String MODID = "morefuelsmod-1.9";
 	public static final String VERSION = "1.3.1";
 	public static final String MODNAME = "More Fuels Mod";
 	
@@ -31,6 +31,10 @@ public class Main {
 		if(enableRFtLrecipe)
 			GameRegistry.addSmelting(Items.rotten_flesh, new ItemStack(Items.leather), 0.3F);
 		config.save();
+		//Load the items.
+		//MoreFuelsItems.createItems();
+		//This might be here in 1.4.x
+		//But for now its just a comment ;)
 		}
 
 	
