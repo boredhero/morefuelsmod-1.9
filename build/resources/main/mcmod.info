@@ -3,13 +3,12 @@
   "modid": "morefuelsmod-1.9",
   "name": "§4§lMore Fuels Mod",
   "description": "§6§oA mod that makes more items usable as fuel.",
-  "version": "1.3.1",
+  "version": "§61.3.2",
   "mcversion": "1.9",
-  "url": "http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/2641361-more-fuels-mod-logical-furnace-fuels",
+  "url": "http://tinyurl.com/MoreFuelsMod",
   "updateUrl": "",
   "authorList": ["boredherobrine13"],
-  "credits": "boredherobrine13",
-  "logoFile": "/morefuelsmod-1.9/icon.png",
+  "logoFile": "/Icon.png",
   "screenshots": [],
   "dependencies": []
 }
