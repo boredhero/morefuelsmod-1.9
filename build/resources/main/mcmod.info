@@ -3,14 +3,14 @@
   "modid": "morefuelsmod-1.9",
   "name": "§4§lMore Fuels Mod",
   "description": "§6§oA mod that makes more items usable as fuel.",
-  "version": "§61.3.2",
+  "version": "§6",
   "mcversion": "1.9",
   "url": "http://tinyurl.com/MoreFuelsMod",
   "updateUrl": "",
-  "authorList": ["boredherobrine13"],
-  "logoFile": "/Icon.png",
+  "authorList": ["§4B§6o§4r§6e§4d"],
+  "logoFile": "mf-logo.png",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["mod_Forge"]
 }
 ]
 
