@@ -9,26 +9,37 @@
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:eclipseClasspath
-:eclipseJdt
-:eclipseProject
+:sourceApiJava
+:compileApiJava UP-TO-DATE
+:processApiResources UP-TO-DATE
+:apiClasses UP-TO-DATE
+:sourceMainJava
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:processResources
+:classes
+:jar
+:sourceTestJava
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:extractMcpData SKIPPED
+:extractMcpMappings SKIPPED
 :getVersionJson
-:extractNatives SKIPPED
 :extractUserdev UP-TO-DATE
-:getAssetIndex UP-TO-DATE
-:getAssets
-Current status: 282/1049   26%
-Current status: 365/1049   34%
-Current status: 452/1049   43%
-Current status: 608/1049   57%
-Current status: 820/1049   78%
-Current status: 879/1049   83%
-Current status: 1039/1049   99%
-:makeStart
-:makeEclipseCleanRunClient UP-TO-DATE
-:makeEclipseCleanRunServer UP-TO-DATE
-:eclipse
+:genSrgs SKIPPED
+:reobfJar
+:extractRangemapReplacedMain
+C:\Users\Noah\Desktop\Coding\MoreFuelsMod\morefuelsmod-1.9\build\sources\main\java
+:retromapReplacedMain
+remapping source...
+:sourceJar
+:assemble
+:check UP-TO-DATE
+:build
 
 BUILD SUCCESSFUL
 
-Total time: 13.487 secs
+Total time: 9.849 secs
