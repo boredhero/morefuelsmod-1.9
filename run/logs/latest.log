@@ -1,0 +1,70 @@
+[01:31:23] [Client thread/INFO]: Setting user: Player5
+[01:31:25] [Client thread/INFO]: LWJGL Version: 2.9.4
+[01:31:28] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:§4More Fuels Mod
+[01:31:29] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:31:29] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[01:31:29] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:31:29] [Thread-8/INFO]: OpenAL initialized.
+[01:31:30] [Sound Library Loader/INFO]: Sound engine started
+[01:31:32] [Client thread/INFO]: Created: 16x16 textures-atlas
+[01:31:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:§4More Fuels Mod
+[01:31:34] [Client thread/INFO]: SoundSystem shutting down...
+[01:31:34] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[01:31:34] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[01:31:34] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[01:31:34] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[01:31:34] [Thread-10/INFO]: OpenAL initialized.
+[01:31:35] [Sound Library Loader/INFO]: Sound engine started
+[01:31:36] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[01:31:37] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[01:31:49] [Server thread/INFO]: Starting integrated minecraft server version 1.9.4
+[01:31:49] [Server thread/INFO]: Generating keypair
+[01:31:50] [Server thread/INFO]: Preparing start region for level 0
+[01:31:50] [Server thread/INFO]: Changing view distance to 12, from 10
+[01:31:51] [Server thread/INFO]: Player5[local:E:5cb71b14] logged in with entity id 190 at (1824.9806456260162, 4.0, -1431.0411064851119)
+[01:31:51] [Server thread/INFO]: Player5 joined the game
+[01:31:51] [Server thread/INFO]: Saving and pausing game...
+[01:31:51] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:31:51] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:31:51] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:31:51] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@339aeae6[id=abd58e08-2462-379a-81f3-fa94df810a52,name=Player5,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:175) [YggdrasilMinecraftSessionService.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:59) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:56) [YggdrasilMinecraftSessionService$1.class:?]
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3524) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2317) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2280) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2195) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.get(LocalCache.java:3934) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3938) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4821) [guava-17.0.jar:?]
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4827) [guava-17.0.jar:?]
+	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:165) [YggdrasilMinecraftSessionService.class:?]
+	at net.minecraft.client.Minecraft.getProfileProperties(Minecraft.java:3043) [Minecraft.class:?]
+	at net.minecraft.client.resources.SkinManager$3.run(SkinManager.java:131) [SkinManager$3.class:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [?:1.8.0_92]
+	at java.util.concurrent.FutureTask.run(Unknown Source) [?:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_92]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_92]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_92]
+[01:31:55] [Server thread/INFO]: Player5 has just earned the achievement [Taking Inventory]
+[01:31:55] [Client thread/INFO]: [CHAT] Player5 has just earned the achievement [Taking Inventory]
+[01:32:07] [Server thread/INFO]: Saving and pausing game...
+[01:32:07] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:32:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:32:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:32:14] [Server thread/INFO]: Saving and pausing game...
+[01:32:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:32:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:32:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:32:14] [Server thread/INFO]: Stopping server
+[01:32:14] [Server thread/INFO]: Saving players
+[01:32:14] [Server thread/INFO]: Saving worlds
+[01:32:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[01:32:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[01:32:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[01:32:15] [Client thread/INFO]: Stopping!
+[01:32:15] [Client thread/INFO]: SoundSystem shutting down...
+[01:32:15] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
