@@ -20,9 +20,9 @@ plugins {
     id "net.minecraftforge.gradle.forge" version "2.0.2"
 }
 */
-version = "1.4.0"
+version = "1.4.1"
 group= "com.bored.morefuelsmod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "morefuelsmod-1.9.4"
+archivesBaseName = "morefuelsmod-1.9.x"
 
 minecraft {
     version = "1.9.4-12.17.0.1976"
