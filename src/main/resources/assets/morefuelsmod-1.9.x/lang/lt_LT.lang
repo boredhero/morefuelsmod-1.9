@@ -1,0 +1,17 @@
+#Items
+item.pelletsFuel.name=Kuro granulės
+item.concentratedPelletsFuel.name=Koncentruotos kuro granulės
+item.coke.name=Koksas
+item.bituminousCoal.name=Bituminė anglis
+item.canSlimoline.name=Slimolino skardinė
+item.dustCoal.name=Anglies dulkės
+item.bitumen.name=Bitumas
+
+#Blocks
+tile.pelletBlock.name=Kuro granulių blokas
+tile.concentratedPelletBlock.name=Koncentruotų kuro granulių blokas
+tile.cokeBlock.name=Kokso blokas
+
+#Tabs
+
+itemGroup.morefuelsmod-1.10.x=More Fuels modas
