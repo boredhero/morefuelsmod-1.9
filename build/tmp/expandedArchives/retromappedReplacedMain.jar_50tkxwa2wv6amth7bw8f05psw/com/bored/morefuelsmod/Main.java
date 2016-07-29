@@ -18,7 +18,7 @@ public class Main {
 
 	public static final String modid = "morefuelsmod-1.9.x";
 	public static final String name = "More Fuels Mod";
-	public static final String version = "1.4.2";
+	public static final String version = "1.4.3";
 
 	@Mod.Instance(modid)
 	public static Main instance;
