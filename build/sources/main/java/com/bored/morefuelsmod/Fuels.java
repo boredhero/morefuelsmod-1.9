@@ -324,10 +324,10 @@ public class Fuels implements IFuelHandler{
 					return 8100; //9 times the value of fuel pellets
 				}
 				if (fuel.getItem() == ModItems.concentratedPelletsFuel){
-					return 3600; //4 times the value of fuel pellets
+					return 32400; //4 times the value of pellet blocks
 				}
 				if (fuel.getItem() == Item.getItemFromBlock(ModBlocks.concentratedPelletBlock)){
-					return 32400; //9 times the value of concentrated fuel pellets...
+					return 291600; //9 times the value fo concentrated pellet fuel
 				}
 				if (fuel.getItem() == ModItems.coke){
 					return 3200; //twice the value of coal.
@@ -341,7 +341,6 @@ public class Fuels implements IFuelHandler{
 				if (fuel.getItem() == ModItems.canSlimoline){
 					return 20000;
 				}
-				
 				return 0;
 	}
 }
