@@ -203,7 +203,7 @@ public class ChunkCache implements IBlockAccess
     {
         int x = (pos.getX() >> 4) - this.chunkX;
         int z = (pos.getZ() >> 4) - this.chunkZ;
-        if (pos.getY() >= 0 && pos.getY() < 256) return _default;
+        if (pos.getY() < 0 && pos.getY() >= 256) return _default;
         if (x < 0 || x >= chunkArray.length || z < 0 || z >= chunkArray[x].length) return _default;
         if (chunkArray[x][z] == null) return _default;
 
