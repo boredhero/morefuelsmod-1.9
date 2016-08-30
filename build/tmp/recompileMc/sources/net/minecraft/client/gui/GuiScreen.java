@@ -162,7 +162,9 @@ public abstract class GuiScreen extends Gui implements GuiYesNoCallback
         }
 
         FontRenderer font = stack.getItem().getFontRenderer(stack);
+        net.minecraftforge.fml.client.config.GuiUtils.preItemToolTip(stack);
         this.drawHoveringText(list, x, y, (font == null ? fontRendererObj : font));
+        net.minecraftforge.fml.client.config.GuiUtils.postItemToolTip();
     }
 
     /**
