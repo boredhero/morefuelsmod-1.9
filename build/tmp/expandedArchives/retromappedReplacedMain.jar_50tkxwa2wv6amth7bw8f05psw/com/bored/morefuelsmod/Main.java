@@ -6,6 +6,7 @@ import com.bored.morefuelsmod.item.ModItems;
 import com.bored.morefuelsmod.proxy.CommonProxy;
 
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -18,14 +19,14 @@ public class Main {
 
 	public static final String modid = "morefuelsmod-1.9.x";
 	public static final String name = "More Fuels Mod";
-	public static final String version = "1.4.4";
+	public static final String version = "1.5.0";
 
 	@Mod.Instance(modid)
 	public static Main instance;
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		System.out.println(name + " is loading!");
+		System.out.println(name + " is making smelting better for you!");
 		Configuration config = new Configuration(event.getSuggestedConfigurationFile());
 		config.load();
 		boolean enableRFtLrecipe = config.get(Configuration.CATEGORY_GENERAL, "enableRFtLrecipe", true).getBoolean(true);
@@ -41,11 +42,11 @@ public class Main {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		GameRegistry.registerFuelHandler(new Fuels());
+		GameRegistry.registerWorldGenerator(new ModWorldGen(), 1);
 	}
 
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-
 	}
 	
 	@SidedProxy(clientSide = "com.bored.morefuelsmod.proxy.ClientProxy", serverSide = "com.bored.morefuelsmod.proxy.CommonProxy")
