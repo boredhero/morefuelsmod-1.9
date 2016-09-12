@@ -1,6 +1,7 @@
 Symbol range map extraction starting
 Processing 14 files
 startProcessing "com\bored\morefuelsmod\Fuels.java" md5: fa94c01e838fbaa46501dfbed4373891
+Cache Hit!
 @|com\bored\morefuelsmod\Fuels.java|8|30|com.bored.morefuelsmod|package|com.bored.morefuelsmod|(file)
 Class Start: com.bored.morefuelsmod.Fuels
    @|com\bored\morefuelsmod\Fuels.java|327|332|Fuels|class|com.bored.morefuelsmod.Fuels
@@ -468,7 +469,7 @@ Class Start: com.bored.morefuelsmod.Fuels
 Class End  : com.bored.morefuelsmod.Fuels
 endProcessing "com\bored\morefuelsmod\Fuels.java"
 
-startProcessing "com\bored\morefuelsmod\Main.java" md5: 9da44f28eb0a7f19a2ba4fe843404558
+startProcessing "com\bored\morefuelsmod\Main.java" md5: 8b0193b5272465f0e3e52bc24ae3371c
 @|com\bored\morefuelsmod\Main.java|8|30|com.bored.morefuelsmod|package|com.bored.morefuelsmod|(file)
 Class Start: com.bored.morefuelsmod.Main
    @|com\bored\morefuelsmod\Main.java|696|699|Mod|class|net.minecraftforge.fml.common.Mod
@@ -559,6 +560,7 @@ Class End  : com.bored.morefuelsmod.Main
 endProcessing "com\bored\morefuelsmod\Main.java"
 
 startProcessing "com\bored\morefuelsmod\ModCrafting.java" md5: 24168db80506fcc77ef62175f4a4f35c
+Cache Hit!
 @|com\bored\morefuelsmod\ModCrafting.java|8|30|com.bored.morefuelsmod|package|com.bored.morefuelsmod|(file)
 Class Start: com.bored.morefuelsmod.ModCrafting
    @|com\bored\morefuelsmod\ModCrafting.java|336|347|ModCrafting|class|com.bored.morefuelsmod.ModCrafting
@@ -1300,6 +1302,7 @@ Class End  : com.bored.morefuelsmod.ModCrafting
 endProcessing "com\bored\morefuelsmod\ModCrafting.java"
 
 startProcessing "com\bored\morefuelsmod\ModSmelting.java" md5: 9dd2d6608c5582bf5304914c0d439038
+Cache Hit!
 @|com\bored\morefuelsmod\ModSmelting.java|8|30|com.bored.morefuelsmod|package|com.bored.morefuelsmod|(file)
 Class Start: com.bored.morefuelsmod.ModSmelting
    @|com\bored\morefuelsmod\ModSmelting.java|223|234|ModSmelting|class|com.bored.morefuelsmod.ModSmelting
@@ -1317,6 +1320,7 @@ Class End  : com.bored.morefuelsmod.ModSmelting
 endProcessing "com\bored\morefuelsmod\ModSmelting.java"
 
 startProcessing "com\bored\morefuelsmod\ModWorldGen.java" md5: 01192c61affa67f72206b72429e4e673
+Cache Hit!
 @|com\bored\morefuelsmod\ModWorldGen.java|8|30|com.bored.morefuelsmod|package|com.bored.morefuelsmod|(file)
 Class Start: com.bored.morefuelsmod.ModWorldGen
    @|com\bored\morefuelsmod\ModWorldGen.java|460|471|ModWorldGen|class|com.bored.morefuelsmod.ModWorldGen
@@ -1413,6 +1417,7 @@ Class End  : com.bored.morefuelsmod.RFtL
 endProcessing "com\bored\morefuelsmod\RFtL.java"
 
 startProcessing "com\bored\morefuelsmod\block\BlockBase.java" md5: d5c477f688efc5bcaafa83d718795ddd
+Cache Hit!
 @|com\bored\morefuelsmod\block\BlockBase.java|8|36|com.bored.morefuelsmod.block|package|com.bored.morefuelsmod.block|(file)
 Class Start: com.bored.morefuelsmod.block.BlockBase
    @|com\bored\morefuelsmod\block\BlockBase.java|254|263|BlockBase|class|com.bored.morefuelsmod.block.BlockBase
@@ -1462,6 +1467,7 @@ Class End  : com.bored.morefuelsmod.block.BlockBase
 endProcessing "com\bored\morefuelsmod\block\BlockBase.java"
 
 startProcessing "com\bored\morefuelsmod\block\BlockOre.java" md5: 56cf6c71b9edbdf87e69c4ceafb66826
+Cache Hit!
 @|com\bored\morefuelsmod\block\BlockOre.java|8|36|com.bored.morefuelsmod.block|package|com.bored.morefuelsmod.block|(file)
 Class Start: com.bored.morefuelsmod.block.BlockOre
    @|com\bored\morefuelsmod\block\BlockOre.java|296|304|BlockOre|class|com.bored.morefuelsmod.block.BlockOre
@@ -1499,7 +1505,7 @@ Class Start: com.bored.morefuelsmod.block.BlockOre
 Class End  : com.bored.morefuelsmod.block.BlockOre
 endProcessing "com\bored\morefuelsmod\block\BlockOre.java"
 
-startProcessing "com\bored\morefuelsmod\block\ModBlocks.java" md5: c82363bc0d0af9c8c748cfb3ef565c80
+startProcessing "com\bored\morefuelsmod\block\ModBlocks.java" md5: 515133cef81697746ff929053c6de486
 @|com\bored\morefuelsmod\block\ModBlocks.java|8|36|com.bored.morefuelsmod.block|package|com.bored.morefuelsmod.block|(file)
 Class Start: com.bored.morefuelsmod.block.ModBlocks
    @|com\bored\morefuelsmod\block\ModBlocks.java|276|285|ModBlocks|class|com.bored.morefuelsmod.block.ModBlocks
@@ -1524,12 +1530,12 @@ Class Start: com.bored.morefuelsmod.block.ModBlocks
       @|com\bored\morefuelsmod\block\ModBlocks.java|548|556|register|method|com.bored.morefuelsmod.block.ModBlocks|register|(Lnet/minecraft/block/Block;)Lnet/minecraft/block/Block;
       @|com\bored\morefuelsmod\block\ModBlocks.java|561|570|BlockBase|class|com.bored.morefuelsmod.block.BlockBase
       @|com\bored\morefuelsmod\block\ModBlocks.java|571|579|Material|class|net.minecraft.block.material.Material
-      @|com\bored\morefuelsmod\block\ModBlocks.java|580|584|WOOD|field|net.minecraft.block.material.Material|WOOD
+      @|com\bored\morefuelsmod\block\ModBlocks.java|580|584|ROCK|field|net.minecraft.block.material.Material|ROCK
       @|com\bored\morefuelsmod\block\ModBlocks.java|605|628|concentratedPelletBlock|field|com.bored.morefuelsmod.block.ModBlocks|concentratedPelletBlock
       @|com\bored\morefuelsmod\block\ModBlocks.java|631|639|register|method|com.bored.morefuelsmod.block.ModBlocks|register|(Lnet/minecraft/block/Block;)Lnet/minecraft/block/Block;
       @|com\bored\morefuelsmod\block\ModBlocks.java|644|653|BlockBase|class|com.bored.morefuelsmod.block.BlockBase
       @|com\bored\morefuelsmod\block\ModBlocks.java|654|662|Material|class|net.minecraft.block.material.Material
-      @|com\bored\morefuelsmod\block\ModBlocks.java|663|667|WOOD|field|net.minecraft.block.material.Material|WOOD
+      @|com\bored\morefuelsmod\block\ModBlocks.java|663|667|ROCK|field|net.minecraft.block.material.Material|ROCK
       @|com\bored\morefuelsmod\block\ModBlocks.java|700|709|cokeBlock|field|com.bored.morefuelsmod.block.ModBlocks|cokeBlock
       @|com\bored\morefuelsmod\block\ModBlocks.java|712|720|register|method|com.bored.morefuelsmod.block.ModBlocks|register|(Lnet/minecraft/block/Block;)Lnet/minecraft/block/Block;
       @|com\bored\morefuelsmod\block\ModBlocks.java|725|734|BlockBase|class|com.bored.morefuelsmod.block.BlockBase
@@ -1639,6 +1645,7 @@ Class End  : com.bored.morefuelsmod.item.ItemBase
 endProcessing "com\bored\morefuelsmod\item\ItemBase.java"
 
 startProcessing "com\bored\morefuelsmod\item\ModItems.java" md5: 2cb95500be32092c3aff189da31b5d28
+Cache Hit!
 @|com\bored\morefuelsmod\item\ModItems.java|8|35|com.bored.morefuelsmod.item|package|com.bored.morefuelsmod.item|(file)
 Class Start: com.bored.morefuelsmod.item.ModItems
    @|com\bored\morefuelsmod\item\ModItems.java|144|152|ModItems|class|com.bored.morefuelsmod.item.ModItems
