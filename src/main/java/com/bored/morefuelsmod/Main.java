@@ -19,7 +19,7 @@ public class Main {
 
 	public static final String modid = "morefuelsmod-1.9.x";
 	public static final String name = "More Fuels Mod";
-	public static final String version = "1.5.1";
+	public static final String version = "1.5.2";
 
 	@Mod.Instance(modid)
 	public static Main instance;
@@ -48,10 +48,10 @@ public class Main {
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 	}
-	
+
 	@SidedProxy(clientSide = "com.bored.morefuelsmod.proxy.ClientProxy", serverSide = "com.bored.morefuelsmod.proxy.CommonProxy")
 	public static CommonProxy proxy;
-	
+
 	public static final MoreFuelsTab creativeTab = new MoreFuelsTab();
 
 }

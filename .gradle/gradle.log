@@ -8,7 +8,21 @@
          R4wk, ZeuX, IngisKahn, bspkrs           
 #################################################
 :deobfCompileDummyTask
+:getVersionJson
+:extractUserdev
+:downloadClient
+:downloadServer
+:splitServerJar
+:mergeJars
+:applyBinaryPatches
 :deobfProvidedDummyTask
+:extractDependencyATs SKIPPED
+:extractMcpData
+:extractMcpMappings
+:genSrgs
+:deobfMcMCP
+Applying SpecialSource...
+Applying Exceptor...
 :sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
@@ -25,11 +39,6 @@
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
 :test UP-TO-DATE
-:extractMcpData SKIPPED
-:extractMcpMappings SKIPPED
-:getVersionJson
-:extractUserdev UP-TO-DATE
-:genSrgs SKIPPED
 :reobfJar
 :extractRangemapReplacedMain
 C:\Users\Noah\Desktop\Coding\MoreFuelsMod\morefuelsmod-1.9\build\sources\main\java
@@ -42,4 +51,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 8.584 secs
+Total time: 32.946 secs
