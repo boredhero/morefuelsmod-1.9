@@ -18,7 +18,7 @@
 :deobfProvidedDummyTask
 :extractDependencyATs SKIPPED
 :extractMcpData
-:extractMcpMappings
+:extractMcpMappings SKIPPED
 :genSrgs
 :deobfMcMCP
 Applying SpecialSource...
@@ -31,7 +31,7 @@ Applying Exceptor...
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 1 warning
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
 :sourceTestJava UP-TO-DATE
@@ -51,4 +51,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 32.946 secs
+Total time: 27.024 secs
