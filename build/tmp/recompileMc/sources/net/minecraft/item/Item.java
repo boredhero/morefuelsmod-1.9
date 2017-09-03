@@ -204,6 +204,9 @@ public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryE
         return 1.0F;
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         return new ActionResult(EnumActionResult.PASS, itemStackIn);
@@ -558,6 +561,9 @@ public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryE
         return false;
     }
 
+    /**
+     * Gets a map of item attribute modifiers, used by ItemSword to increase hit damage.
+     */
     @Deprecated // Use ItemStack sensitive version below.
     public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot equipmentSlot)
     {
@@ -698,9 +704,6 @@ public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryE
      */
     public boolean hasContainerItem(ItemStack stack)
     {
-        /**
-         * True if this Item has a container item (a.k.a. crafting result)
-         */
         return hasContainerItem();
     }
 
@@ -950,9 +953,6 @@ public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryE
      */
     public int getMaxDamage(ItemStack stack)
     {
-        /**
-         * Returns the maximum damage an item can take.
-         */
         return getMaxDamage();
     }
 
@@ -989,9 +989,6 @@ public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryE
      */
     public boolean canHarvestBlock(IBlockState state, ItemStack stack)
     {
-        /**
-         * Check whether this Item can harvest the given Block
-         */
         return canHarvestBlock(state);
     }
 
@@ -1054,9 +1051,6 @@ public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryE
      */
     public int getItemEnchantability(ItemStack stack)
     {
-        /**
-         * Return the enchantability factor of the item, most of the time is based on material.
-         */
         return getItemEnchantability();
     }
 

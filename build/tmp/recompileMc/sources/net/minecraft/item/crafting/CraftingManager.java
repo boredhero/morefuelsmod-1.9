@@ -25,6 +25,7 @@ public class CraftingManager
 {
     /** The static instance of this class */
     private static final CraftingManager INSTANCE = new CraftingManager();
+    /** A list of all the recipes added */
     private final List<IRecipe> recipes = Lists.<IRecipe>newArrayList();
 
     /**
@@ -357,6 +358,9 @@ public class CraftingManager
         return aitemstack;
     }
 
+    /**
+     * returns the List<> of all recipes
+     */
     public List<IRecipe> getRecipeList()
     {
         return this.recipes;

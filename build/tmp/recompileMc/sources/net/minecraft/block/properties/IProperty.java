@@ -11,6 +11,9 @@ public interface IProperty<T extends Comparable<T>>
 
     Collection<T> getAllowedValues();
 
+    /**
+     * The class of the values of this property
+     */
     Class<T> getValueClass();
 
     @SideOnly(Side.CLIENT)

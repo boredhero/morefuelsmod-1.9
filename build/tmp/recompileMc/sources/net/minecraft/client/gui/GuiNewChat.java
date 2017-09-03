@@ -24,8 +24,11 @@ public class GuiNewChat extends Gui
     private static final Joiner NEWLINE_STRING_JOINER = Joiner.on("\\n");
     private static final Logger LOGGER = LogManager.getLogger();
     private final Minecraft mc;
+    /** A list of messages previously sent through the chat GUI */
     private final List<String> sentMessages = Lists.<String>newArrayList();
+    /** Chat lines to be displayed in the chat box */
     private final List<ChatLine> chatLines = Lists.<ChatLine>newArrayList();
+    /** List of the ChatLines currently drawn */
     private final List<ChatLine> drawnChatLines = Lists.<ChatLine>newArrayList();
     private int scrollPos;
     private boolean isScrolled;
@@ -195,6 +198,9 @@ public class GuiNewChat extends Gui
         }
     }
 
+    /**
+     * Gets the list of messages previously sent through the chat GUI
+     */
     public List<String> getSentMessages()
     {
         return this.sentMessages;

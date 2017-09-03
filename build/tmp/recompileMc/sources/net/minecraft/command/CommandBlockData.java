@@ -103,6 +103,9 @@ public class CommandBlockData extends CommandBase
         }
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
         return args.length > 0 && args.length <= 3 ? getTabCompletionCoordinate(args, 0, pos) : Collections.<String>emptyList();

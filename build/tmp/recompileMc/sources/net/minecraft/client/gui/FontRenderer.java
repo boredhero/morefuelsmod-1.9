@@ -824,6 +824,9 @@ public class FontRenderer implements IResourceManagerReloadListener
         this.bidiFlag = bidiFlagIn;
     }
 
+    /**
+     * Breaks a string into a list of pieces that will fit a specified width.
+     */
     public List<String> listFormattedStringToWidth(String str, int wrapWidth)
     {
         return Arrays.<String>asList(this.wrapFormattedStringToWidth(str, wrapWidth).split("\n"));

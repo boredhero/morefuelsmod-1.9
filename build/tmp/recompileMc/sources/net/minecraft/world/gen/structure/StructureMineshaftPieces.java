@@ -609,6 +609,7 @@ public class StructureMineshaftPieces
 
     public static class Room extends StructureComponent
         {
+            /** List of other Mineshaft components linked to this room. */
             private List<StructureBoundingBox> roomsLinkedToTheRoom = Lists.<StructureBoundingBox>newLinkedList();
 
             public Room()

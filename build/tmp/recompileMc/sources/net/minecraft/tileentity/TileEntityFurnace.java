@@ -377,10 +377,6 @@ public class TileEntityFurnace extends TileEntityLockable implements ITickable, 
 
     public static boolean isItemFuel(ItemStack stack)
     {
-        /**
-         * Returns the number of ticks that the supplied fuel item will keep the furnace burning, or 0 if the item isn't
-         * fuel
-         */
         return getItemBurnTime(stack) > 0;
     }
 

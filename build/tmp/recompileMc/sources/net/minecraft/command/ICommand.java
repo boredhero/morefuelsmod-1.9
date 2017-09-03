@@ -17,6 +17,9 @@ public interface ICommand extends Comparable<ICommand>
      */
     String getCommandUsage(ICommandSender sender);
 
+    /**
+     * Get a list of aliases for this command. <b>Never return null!</b>
+     */
     List<String> getCommandAliases();
 
     /**
@@ -29,6 +32,9 @@ public interface ICommand extends Comparable<ICommand>
      */
     boolean checkPermission(MinecraftServer server, ICommandSender sender);
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos);
 
     /**

@@ -23,6 +23,9 @@ public class ItemLilyPad extends ItemColored
         super(block, false);
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         RayTraceResult raytraceresult = this.rayTrace(worldIn, playerIn, true);

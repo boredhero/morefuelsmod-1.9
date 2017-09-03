@@ -77,6 +77,9 @@ public class CommandGameMode extends CommandBase
         return worldsettings$gametype == WorldSettings.GameType.NOT_SET ? WorldSettings.getGameTypeById(parseInt(gameModeString, 0, WorldSettings.GameType.values().length - 2)) : worldsettings$gametype;
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
         return args.length == 1 ? getListOfStringsMatchingLastWord(args, new String[] {"survival", "creative", "adventure", "spectator"}): (args.length == 2 ? getListOfStringsMatchingLastWord(args, server.getAllUsernames()) : Collections.<String>emptyList());

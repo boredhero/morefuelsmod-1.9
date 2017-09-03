@@ -19,7 +19,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class GuiScreenResourcePacks extends GuiScreen
 {
     private final GuiScreen parentScreen;
+    /** List of available resource packs */
     private List<ResourcePackListEntry> availableResourcePacks;
+    /** List of selected resource packs */
     private List<ResourcePackListEntry> selectedResourcePacks;
     /** List component that contains the available resource packs */
     private GuiResourcePackAvailable availableResourcePacksList;
@@ -93,16 +95,26 @@ public class GuiScreenResourcePacks extends GuiScreen
         return this.selectedResourcePacks.contains(p_146961_1_);
     }
 
+    /**
+     * Returns the list containing the resource pack entry, returns the selected list if it is selected, otherwise
+     * returns the available list
+     */
     public List<ResourcePackListEntry> getListContaining(ResourcePackListEntry p_146962_1_)
     {
         return this.hasResourcePackEntry(p_146962_1_) ? this.selectedResourcePacks : this.availableResourcePacks;
     }
 
+    /**
+     * Returns a list containing the available resource packs
+     */
     public List<ResourcePackListEntry> getAvailableResourcePacks()
     {
         return this.availableResourcePacks;
     }
 
+    /**
+     * Returns a list containing the selected resource packs
+     */
     public List<ResourcePackListEntry> getSelectedResourcePacks()
     {
         return this.selectedResourcePacks;

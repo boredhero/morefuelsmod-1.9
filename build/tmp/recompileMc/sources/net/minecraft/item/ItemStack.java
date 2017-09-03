@@ -169,6 +169,9 @@ public final class ItemStack implements net.minecraftforge.common.capabilities.I
         return this.getItem().getStrVsBlock(this, blockIn);
     }
 
+    /**
+     * Called whenr the item stack is equipped and right clicked. Replaces the item stack with the return value.
+     */
     public ActionResult<ItemStack> useItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         return this.getItem().onItemRightClick(this, worldIn, playerIn, hand);
@@ -270,17 +273,11 @@ public final class ItemStack implements net.minecraftforge.common.capabilities.I
 
     public int getItemDamage()
     {
-        /**
-         * Returns the object corresponding to the stack.
-         */
         return getItem().getDamage(this);
     }
 
     public int getMetadata()
     {
-        /**
-         * Returns the object corresponding to the stack.
-         */
         return getItem().getMetadata(this);
     }
 
@@ -400,9 +397,6 @@ public final class ItemStack implements net.minecraftforge.common.capabilities.I
      */
     public boolean canHarvestBlock(IBlockState blockIn)
     {
-        /**
-         * Returns the object corresponding to the stack.
-         */
         return getItem().canHarvestBlock(blockIn, this);
     }
 
@@ -669,6 +663,9 @@ public final class ItemStack implements net.minecraftforge.common.capabilities.I
         return this.stackTagCompound == null ? false : (!this.stackTagCompound.hasKey("display", 10) ? false : this.stackTagCompound.getCompoundTag("display").hasKey("Name", 8));
     }
 
+    /**
+     * Return a list of strings containing information about the item
+     */
     @SideOnly(Side.CLIENT)
     public List<String> getTooltip(EntityPlayer playerIn, boolean advanced)
     {
@@ -1012,6 +1009,10 @@ public final class ItemStack implements net.minecraftforge.common.capabilities.I
         this.stackTagCompound.setInteger("RepairCost", cost);
     }
 
+    /**
+     * Gets the attribute modifiers for this ItemStack.
+     * Will check for an NBT tag list containing modifiers for the stack.
+     */
     public Multimap<String, AttributeModifier> getAttributeModifiers(EntityEquipmentSlot equipmentSlot)
     {
         Multimap<String, AttributeModifier> multimap;

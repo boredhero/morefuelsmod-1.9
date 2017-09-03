@@ -75,6 +75,9 @@ public abstract class CommandBase implements ICommand
         return 4;
     }
 
+    /**
+     * Get a list of aliases for this command. <b>Never return null!</b>
+     */
     public List<String> getCommandAliases()
     {
         return Collections.<String>emptyList();
@@ -88,6 +91,9 @@ public abstract class CommandBase implements ICommand
         return sender.canCommandSenderUseCommand(this.getRequiredPermissionLevel(), this.getCommandName());
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
         return Collections.<String>emptyList();
@@ -640,10 +646,6 @@ public abstract class CommandBase implements ICommand
      */
     public static String joinNiceStringFromCollection(Collection<String> strings)
     {
-        /**
-         * Creates a linguistic series joining the input objects together.  Examples: 1) {} --> "",  2) {"Steve"} -->
-         * "Steve",  3) {"Steve", "Phil"} --> "Steve and Phil",  4) {"Steve", "Phil", "Mark"} --> "Steve, Phil and Mark"
-         */
         return joinNiceString(strings.toArray(new String[strings.size()]));
     }
 
@@ -718,6 +720,10 @@ public abstract class CommandBase implements ICommand
         return region.regionMatches(true, 0, original, 0, original.length());
     }
 
+    /**
+     * Returns a List of strings (chosen from the given strings) which the last word in the given string array is a
+     * beginning-match for. (Tab completion).
+     */
     public static List<String> getListOfStringsMatchingLastWord(String[] args, String... possibilities)
     {
         return getListOfStringsMatchingLastWord(args, Arrays.asList(possibilities));

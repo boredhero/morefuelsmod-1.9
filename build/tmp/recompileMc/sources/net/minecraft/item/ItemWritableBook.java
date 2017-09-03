@@ -16,6 +16,9 @@ public class ItemWritableBook extends Item
         this.setMaxStackSize(1);
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         playerIn.openBook(itemStackIn, hand);

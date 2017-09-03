@@ -52,6 +52,9 @@ public class ItemFishingRod extends Item
         return true;
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         if (playerIn.fishEntity != null)

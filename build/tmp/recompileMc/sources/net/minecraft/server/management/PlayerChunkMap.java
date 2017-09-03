@@ -38,11 +38,16 @@ public class PlayerChunkMap
         }
     };
     private final WorldServer theWorldServer;
+    /** players in the current instance */
     private final List<EntityPlayerMP> players = Lists.<EntityPlayerMP>newArrayList();
+    /** the hash of all playerInstances created */
     private final Long2ObjectMap<PlayerChunkMapEntry> playerInstances = new Long2ObjectOpenHashMap(4096);
+    /** the playerInstances(chunks) that need to be updated */
     private final Set<PlayerChunkMapEntry> playerInstancesToUpdate = Sets.<PlayerChunkMapEntry>newHashSet();
     private final List<PlayerChunkMapEntry> pendingSendToPlayers = Lists.<PlayerChunkMapEntry>newLinkedList();
+    /** List of player instances whose chunk field is unassigned, and need the chunk at their pos to be loaded. */
     private final List<PlayerChunkMapEntry> playersNeedingChunks = Lists.<PlayerChunkMapEntry>newLinkedList();
+    /** This field is using when chunk should be processed (every 8000 ticks) */
     private final List<PlayerChunkMapEntry> playerInstanceList = Lists.<PlayerChunkMapEntry>newArrayList();
     /** Number of chunks the server sends to the client. Valid 3<=x<=15. In server.properties. */
     private int playerViewRadius;

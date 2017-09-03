@@ -34,6 +34,9 @@ public class ItemBucket extends Item
         this.setCreativeTab(CreativeTabs.MISC);
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         boolean flag = this.isFull == Blocks.AIR;

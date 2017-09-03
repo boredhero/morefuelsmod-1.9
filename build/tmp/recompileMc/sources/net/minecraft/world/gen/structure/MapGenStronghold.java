@@ -176,6 +176,10 @@ public class MapGenStronghold extends MapGenStructure
         }
     }
 
+    /**
+     * Returns a list of other locations at which the structure generation has been run, or null if not relevant to this
+     * structure generator.
+     */
     protected List<BlockPos> getCoordList()
     {
         List<BlockPos> list = Lists.<BlockPos>newArrayList();

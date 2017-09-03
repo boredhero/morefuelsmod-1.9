@@ -16,6 +16,7 @@ public class InventoryBasic implements IInventory
     private String inventoryTitle;
     private int slotsCount;
     private ItemStack[] inventoryContents;
+    /** Listeners notified when any item in this inventory is changed. */
     private List<IInventoryChangedListener> changeListeners;
     private boolean hasCustomName;
 

@@ -69,6 +69,9 @@ public class EnchantmentHelper
         }
     }
 
+    /**
+     * Return the enchantments for the specified stack.
+     */
     public static Map<Enchantment, Integer> getEnchantments(ItemStack stack)
     {
         Map<Enchantment, Integer> map = Maps.<Enchantment, Integer>newLinkedHashMap();
@@ -374,6 +377,10 @@ public class EnchantmentHelper
         return p_77504_1_;
     }
 
+    /**
+     * Create a list of random EnchantmentData (enchantments) that can be added together to the ItemStack, the 3rd
+     * parameter is the total enchantability level.
+     */
     public static List<EnchantmentData> buildEnchantmentList(Random randomIn, ItemStack itemStackIn, int p_77513_2_, boolean allowTreasure)
     {
         List<EnchantmentData> list = Lists.<EnchantmentData>newArrayList();

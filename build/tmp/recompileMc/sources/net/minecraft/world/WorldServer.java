@@ -88,6 +88,7 @@ public class WorldServer extends World implements IThreadListener
     /** The player chunk map for this server world. */
     private final PlayerChunkMap thePlayerManager;
     private final Set<NextTickListEntry> pendingTickListEntriesHashSet = Sets.<NextTickListEntry>newHashSet();
+    /** All work to do in future ticks. */
     private final TreeSet<NextTickListEntry> pendingTickListEntriesTreeSet = new TreeSet();
     private final Map<UUID, Entity> entitiesByUuid = Maps.<UUID, Entity>newHashMap();
     /** Whether level saving is disabled or not */

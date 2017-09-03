@@ -13,6 +13,7 @@ import net.minecraft.world.biome.Biome;
 
 public class MapGenVillage extends MapGenStructure
 {
+    /** A list of all the biomes villages can spawn in. */
     public static List<Biome> VILLAGE_SPAWN_BIOMES = Arrays.<Biome>asList(new Biome[] {Biomes.PLAINS, Biomes.DESERT, Biomes.SAVANNA});
     /** None */
     private int size;

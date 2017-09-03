@@ -16,6 +16,7 @@ import net.minecraft.world.biome.Biome;
 public class MapGenScatteredFeature extends MapGenStructure
 {
     private static final List<Biome> BIOMELIST = Arrays.<Biome>asList(new Biome[] {Biomes.DESERT, Biomes.DESERT_HILLS, Biomes.JUNGLE, Biomes.JUNGLE_HILLS, Biomes.SWAMPLAND, Biomes.ICE_PLAINS, Biomes.COLD_TAIGA});
+    /** contains possible spawns for scattered features */
     private List<Biome.SpawnListEntry> scatteredFeatureSpawnList;
     /** the maximum distance between scattered features */
     private int maxDistanceBetweenScatteredFeatures;
@@ -112,6 +113,9 @@ public class MapGenScatteredFeature extends MapGenStructure
         }
     }
 
+    /**
+     * returns possible spawns for scattered features
+     */
     public List<Biome.SpawnListEntry> getScatteredFeatureSpawnList()
     {
         return this.scatteredFeatureSpawnList;

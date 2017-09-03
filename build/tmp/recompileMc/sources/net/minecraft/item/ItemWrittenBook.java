@@ -90,6 +90,9 @@ public class ItemWrittenBook extends Item
         }
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         if (!worldIn.isRemote)

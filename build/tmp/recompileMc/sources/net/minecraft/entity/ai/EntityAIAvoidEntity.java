@@ -24,6 +24,7 @@ public class EntityAIAvoidEntity<T extends Entity> extends EntityAIBase
     private Path entityPathEntity;
     /** The PathNavigate of our entity */
     private PathNavigate entityPathNavigate;
+    /** Class of entity this behavior seeks to avoid */
     private Class<T> classToAvoid;
     private Predicate <? super T > avoidTargetSelector;
 

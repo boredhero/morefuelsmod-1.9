@@ -87,7 +87,9 @@ public class EntityList
     public static final Map < Class <? extends Entity > , String > CLASS_TO_NAME = Maps. < Class <? extends Entity > , String > newHashMap();
     public static final Map < Integer, Class <? extends Entity >> ID_TO_CLASS = Maps. < Integer, Class <? extends Entity >> newHashMap();
     private static final Map < Class <? extends Entity > , Integer > CLASS_TO_ID = Maps. < Class <? extends Entity > , Integer > newHashMap();
+    /** provides a mapping between a string and an entity ID */
     private static final Map<String, Integer> NAME_TO_ID = Maps.<String, Integer>newHashMap();
+    /** This is a HashMap of the Creative Entity Eggs/Spawners. */
     public static final Map<String, EntityList.EntityEggInfo> ENTITY_EGGS = Maps.<String, EntityList.EntityEggInfo>newLinkedHashMap();
 
     /**

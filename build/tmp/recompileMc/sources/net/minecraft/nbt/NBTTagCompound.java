@@ -16,6 +16,7 @@ import net.minecraft.util.ReportedException;
 
 public class NBTTagCompound extends NBTBase
 {
+    /** The key-value pairs for the tag. Each key is a UTF string, each value is a tag. */
     private Map<String, NBTBase> tagMap = Maps.<String, NBTBase>newHashMap();
 
     /**
@@ -59,6 +60,9 @@ public class NBTTagCompound extends NBTBase
         }
     }
 
+    /**
+     * Gets a set with the names of the keys in the tag compound.
+     */
     public Set<String> getKeySet()
     {
         return this.tagMap.keySet();

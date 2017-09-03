@@ -46,6 +46,9 @@ public class CommandHelp extends CommandBase
         return "commands.help.usage";
     }
 
+    /**
+     * Get a list of aliases for this command. <b>Never return null!</b>
+     */
     public List<String> getCommandAliases()
     {
         return Arrays.<String>asList(new String[] {"?"});
@@ -123,15 +126,14 @@ public class CommandHelp extends CommandBase
         return server.getCommandManager().getCommands();
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
         if (args.length == 1)
         {
             Set<String> set = this.getCommandMap(server).keySet();
-            /**
-             * Returns a List of strings (chosen from the given strings) which the last word in the given string array
-             * is a beginning-match for. (Tab completion).
-             */
             return getListOfStringsMatchingLastWord(args, (String[])set.toArray(new String[set.size()]));
         }
         else

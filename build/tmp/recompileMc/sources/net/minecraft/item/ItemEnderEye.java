@@ -82,6 +82,9 @@ public class ItemEnderEye extends Item
         }
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         RayTraceResult raytraceresult = this.rayTrace(worldIn, playerIn, false);

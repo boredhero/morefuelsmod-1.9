@@ -115,6 +115,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class RenderManager
 {
     public Map < Class <? extends Entity > , Render <? extends Entity >> entityRenderMap = Maps. < Class <? extends Entity > , Render <? extends Entity >> newHashMap();
+    /** lists the various player skin types with their associated Renderer class instances. */
     private Map<String, RenderPlayer> skinMap = Maps.<String, RenderPlayer>newHashMap();
     private RenderPlayer playerRenderer;
     /** Renders fonts */

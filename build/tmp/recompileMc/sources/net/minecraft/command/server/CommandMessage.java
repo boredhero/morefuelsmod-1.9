@@ -17,6 +17,9 @@ import net.minecraft.util.text.TextFormatting;
 
 public class CommandMessage extends CommandBase
 {
+    /**
+     * Get a list of aliases for this command. <b>Never return null!</b>
+     */
     public List<String> getCommandAliases()
     {
         return Arrays.<String>asList(new String[] {"w", "msg"});
@@ -76,12 +79,11 @@ public class CommandMessage extends CommandBase
         }
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
-        /**
-         * Returns a List of strings (chosen from the given strings) which the last word in the given string array is a
-         * beginning-match for. (Tab completion).
-         */
         return getListOfStringsMatchingLastWord(args, server.getAllUsernames());
     }
 

@@ -88,6 +88,9 @@ public class ItemFood extends Item
         return EnumAction.EAT;
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         if (playerIn.canEat(this.alwaysEdible))

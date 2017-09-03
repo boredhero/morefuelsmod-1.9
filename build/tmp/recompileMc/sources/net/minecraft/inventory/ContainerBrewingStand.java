@@ -187,9 +187,6 @@ public class ContainerBrewingStand extends Container
              */
             public boolean isItemValid(@Nullable ItemStack stack)
             {
-                /**
-                 * Returns true if the given ItemStack is usable as a fuel in the brewing stand.
-                 */
                 return isValidBrewingFuel(stack);
             }
 
@@ -252,9 +249,6 @@ public class ContainerBrewingStand extends Container
              */
             public boolean isItemValid(@Nullable ItemStack stack)
             {
-                /**
-                 * Returns true if this itemstack can be filled with a potion
-                 */
                 return canHoldPotion(stack);
             }
 

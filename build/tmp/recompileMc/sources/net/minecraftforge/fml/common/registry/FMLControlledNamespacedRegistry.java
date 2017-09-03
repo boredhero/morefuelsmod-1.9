@@ -331,9 +331,6 @@ public class FMLControlledNamespacedRegistry<I extends IForgeRegistryEntry<I>> e
 
             if (name != null)
             {
-                /**
-                 * Does this registry contain an entry for the given key?
-                 */
                 return containsKey(name);
             }
         }
@@ -818,9 +815,6 @@ public class FMLControlledNamespacedRegistry<I extends IForgeRegistryEntry<I>> e
     @Override
     public ResourceLocation getKey(I value)
     {
-        /**
-         * Gets the name we use to identify the given object.
-         */
         return getNameForObject(value);
     }
 

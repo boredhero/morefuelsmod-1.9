@@ -16,7 +16,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public abstract class Container
 {
+    /** the list of all items(stacks) for the corresponding slot */
     public List<ItemStack> inventoryItemStacks = Lists.<ItemStack>newArrayList();
+    /** the list of all slots in the inventory */
     public List<Slot> inventorySlots = Lists.<Slot>newArrayList();
     public int windowId;
     @SideOnly(Side.CLIENT)
@@ -25,7 +27,9 @@ public abstract class Container
     private int dragMode = -1;
     /** The current drag event (0 : start, 1 : add slot : 2 : end) */
     private int dragEvent;
+    /** The list of slots where the itemstack holds will be distributed */
     private final Set<Slot> dragSlots = Sets.<Slot>newHashSet();
+    /** list of all people that need to be notified when this craftinventory changes */
     protected List<IContainerListener> listeners = Lists.<IContainerListener>newArrayList();
     private Set<EntityPlayer> playerList = Sets.<EntityPlayer>newHashSet();
 
@@ -54,6 +58,9 @@ public abstract class Container
         }
     }
 
+    /**
+     * returns a list if itemStacks, for each slot.
+     */
     public List<ItemStack> getInventory()
     {
         List<ItemStack> list = Lists.<ItemStack>newArrayList();

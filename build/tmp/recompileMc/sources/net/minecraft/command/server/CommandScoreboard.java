@@ -1221,14 +1221,13 @@ public class CommandScoreboard extends CommandBase
         }
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
         if (args.length == 1)
         {
-            /**
-             * Returns a List of strings (chosen from the given strings) which the last word in the given string array
-             * is a beginning-match for. (Tab completion).
-             */
             return getListOfStringsMatchingLastWord(args, new String[] {"objectives", "players", "teams"});
         }
         else
@@ -1237,10 +1236,6 @@ public class CommandScoreboard extends CommandBase
             {
                 if (args.length == 2)
                 {
-                    /**
-                     * Returns a List of strings (chosen from the given strings) which the last word in the given string
-                     * array is a beginning-match for. (Tab completion).
-                     */
                     return getListOfStringsMatchingLastWord(args, new String[] {"list", "add", "remove", "setdisplay"});
                 }
 
@@ -1263,10 +1258,6 @@ public class CommandScoreboard extends CommandBase
                 {
                     if (args.length == 3)
                     {
-                        /**
-                         * Returns a List of strings (chosen from the given strings) which the last word in the given
-                         * string array is a beginning-match for. (Tab completion).
-                         */
                         return getListOfStringsMatchingLastWord(args, Scoreboard.getDisplaySlotStrings());
                     }
 
@@ -1280,10 +1271,6 @@ public class CommandScoreboard extends CommandBase
             {
                 if (args.length == 2)
                 {
-                    /**
-                     * Returns a List of strings (chosen from the given strings) which the last word in the given string
-                     * array is a beginning-match for. (Tab completion).
-                     */
                     return getListOfStringsMatchingLastWord(args, new String[] {"set", "add", "remove", "reset", "list", "enable", "test", "operation", "tag"});
                 }
 
@@ -1293,10 +1280,6 @@ public class CommandScoreboard extends CommandBase
                     {
                         if (args.length == 3)
                         {
-                            /**
-                             * Returns a List of strings (chosen from the given strings) which the last word in the
-                             * given string array is a beginning-match for. (Tab completion).
-                             */
                             return getListOfStringsMatchingLastWord(args, server.getAllUsernames());
                         }
 
@@ -1321,19 +1304,11 @@ public class CommandScoreboard extends CommandBase
 
                             if (args.length == 5)
                             {
-                                /**
-                                 * Returns a List of strings (chosen from the given strings) which the last word in the
-                                 * given string array is a beginning-match for. (Tab completion).
-                                 */
                                 return getListOfStringsMatchingLastWord(args, new String[] {"+=", "-=", "*=", "/=", "%=", "=", "<", ">", "><"});
                             }
 
                             if (args.length == 6)
                             {
-                                /**
-                                 * Returns a List of strings (chosen from the given strings) which the last word in the
-                                 * given string array is a beginning-match for. (Tab completion).
-                                 */
                                 return getListOfStringsMatchingLastWord(args, server.getAllUsernames());
                             }
 
@@ -1351,10 +1326,6 @@ public class CommandScoreboard extends CommandBase
 
                             if (args.length == 4)
                             {
-                                /**
-                                 * Returns a List of strings (chosen from the given strings) which the last word in the
-                                 * given string array is a beginning-match for. (Tab completion).
-                                 */
                                 return getListOfStringsMatchingLastWord(args, new String[] {"add", "remove", "list"});
                             }
                         }
@@ -1376,10 +1347,6 @@ public class CommandScoreboard extends CommandBase
                 {
                     if (args.length == 3)
                     {
-                        /**
-                         * Returns a List of strings (chosen from the given strings) which the last word in the given
-                         * string array is a beginning-match for. (Tab completion).
-                         */
                         return getListOfStringsMatchingLastWord(args, server.getAllUsernames());
                     }
 
@@ -1393,10 +1360,6 @@ public class CommandScoreboard extends CommandBase
             {
                 if (args.length == 2)
                 {
-                    /**
-                     * Returns a List of strings (chosen from the given strings) which the last word in the given string
-                     * array is a beginning-match for. (Tab completion).
-                     */
                     return getListOfStringsMatchingLastWord(args, new String[] {"add", "remove", "join", "leave", "empty", "list", "option"});
                 }
 
@@ -1409,10 +1372,6 @@ public class CommandScoreboard extends CommandBase
 
                     if (args.length >= 4)
                     {
-                        /**
-                         * Returns a List of strings (chosen from the given strings) which the last word in the given
-                         * string array is a beginning-match for. (Tab completion).
-                         */
                         return getListOfStringsMatchingLastWord(args, server.getAllUsernames());
                     }
                 }
@@ -1420,10 +1379,6 @@ public class CommandScoreboard extends CommandBase
                 {
                     if (args[1].equalsIgnoreCase("leave"))
                     {
-                        /**
-                         * Returns a List of strings (chosen from the given strings) which the last word in the given
-                         * string array is a beginning-match for. (Tab completion).
-                         */
                         return getListOfStringsMatchingLastWord(args, server.getAllUsernames());
                     }
 
@@ -1438,10 +1393,6 @@ public class CommandScoreboard extends CommandBase
 
                             if (args.length == 4)
                             {
-                                /**
-                                 * Returns a List of strings (chosen from the given strings) which the last word in the
-                                 * given string array is a beginning-match for. (Tab completion).
-                                 */
                                 return getListOfStringsMatchingLastWord(args, new String[] {"color", "friendlyfire", "seeFriendlyInvisibles", "nametagVisibility", "deathMessageVisibility", "collisionRule"});
                             }
 
@@ -1454,28 +1405,16 @@ public class CommandScoreboard extends CommandBase
 
                                 if (args[3].equalsIgnoreCase("nametagVisibility") || args[3].equalsIgnoreCase("deathMessageVisibility"))
                                 {
-                                    /**
-                                     * Returns a List of strings (chosen from the given strings) which the last word in
-                                     * the given string array is a beginning-match for. (Tab completion).
-                                     */
                                     return getListOfStringsMatchingLastWord(args, Team.EnumVisible.getNames());
                                 }
 
                                 if (args[3].equalsIgnoreCase("collisionRule"))
                                 {
-                                    /**
-                                     * Returns a List of strings (chosen from the given strings) which the last word in
-                                     * the given string array is a beginning-match for. (Tab completion).
-                                     */
                                     return getListOfStringsMatchingLastWord(args, Team.CollisionRule.getNames());
                                 }
 
                                 if (args[3].equalsIgnoreCase("friendlyfire") || args[3].equalsIgnoreCase("seeFriendlyInvisibles"))
                                 {
-                                    /**
-                                     * Returns a List of strings (chosen from the given strings) which the last word in
-                                     * the given string array is a beginning-match for. (Tab completion).
-                                     */
                                     return getListOfStringsMatchingLastWord(args, new String[] {"true", "false"});
                                 }
                             }

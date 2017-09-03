@@ -56,6 +56,9 @@ public class CommandDifficulty extends CommandBase
         return !difficultyString.equalsIgnoreCase("peaceful") && !difficultyString.equalsIgnoreCase("p") ? (!difficultyString.equalsIgnoreCase("easy") && !difficultyString.equalsIgnoreCase("e") ? (!difficultyString.equalsIgnoreCase("normal") && !difficultyString.equalsIgnoreCase("n") ? (!difficultyString.equalsIgnoreCase("hard") && !difficultyString.equalsIgnoreCase("h") ? EnumDifficulty.getDifficultyEnum(parseInt(difficultyString, 0, 3)) : EnumDifficulty.HARD) : EnumDifficulty.NORMAL) : EnumDifficulty.EASY) : EnumDifficulty.PEACEFUL;
     }
 
+    /**
+     * Get a list of options for when the user presses the TAB key
+     */
     public List<String> getTabCompletionOptions(MinecraftServer server, ICommandSender sender, String[] args, @Nullable BlockPos pos)
     {
         return args.length == 1 ? getListOfStringsMatchingLastWord(args, new String[] {"peaceful", "easy", "normal", "hard"}): Collections.<String>emptyList();

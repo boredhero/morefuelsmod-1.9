@@ -43,6 +43,10 @@ public class EntitySelector
     private static final Pattern INT_LIST_PATTERN = Pattern.compile("\\G([-!]?[\\w-]*)(?:$|,)");
     /** This matches things like "rm=4,c=2" and is used for handling named token arguments. */
     private static final Pattern KEY_VALUE_LIST_PATTERN = Pattern.compile("\\G(\\w+)=([-!]?[\\w\\.-]*)(?:$|,)"); // FORGE: allow . in entity selectors
+    /**
+     * A set of arguments that will change the selector's world list to the sender's world instead of all the worlds
+     * when present
+     */
     private static final Set<String> WORLD_BINDING_ARGS = Sets.newHashSet(new String[] {"x", "y", "z", "dx", "dy", "dz", "rm", "r"});
 
     /**
@@ -54,6 +58,10 @@ public class EntitySelector
         return (EntityPlayerMP)matchOneEntity(sender, token, EntityPlayerMP.class);
     }
 
+    /**
+     * Returns one entity of the given class that matches the given at-token. Returns null if more than one entity
+     * matches.
+     */
     @Nullable
     public static <T extends Entity> T matchOneEntity(ICommandSender sender, String token, Class <? extends T > targetClass)
     {
@@ -83,6 +91,9 @@ public class EntitySelector
         }
     }
 
+    /**
+     * Returns all entities of the given class that matches the given at-token in a list.
+     */
     public static <T extends Entity> List<T> matchEntities(ICommandSender sender, String token, Class <? extends T > targetClass)
     {
         Matcher matcher = TOKEN_PATTERN.matcher(token);
@@ -130,6 +141,10 @@ public class EntitySelector
         }
     }
 
+    /**
+     * Returns the worlds to match the entities in for the specified command sender and token. This returns the sender's
+     * world if the selector specifies a location or all currently loaded worlds on the server if not.
+     */
     private static List<World> getWorlds(ICommandSender sender, Map<String, String> argumentMap)
     {
         List<World> list = Lists.<World>newArrayList();
@@ -146,6 +161,9 @@ public class EntitySelector
         return list;
     }
 
+    /**
+     * Checks to make sure that the specified type is valid
+     */
     private static <T extends Entity> boolean isEntityTypeValid(ICommandSender commandSender, Map<String, String> params)
     {
         String s = getArgument(params, "type");
@@ -519,6 +537,9 @@ public class EntitySelector
         return list;
     }
 
+    /**
+     * Filters the results based on the paramaters of the selector
+     */
     private static <T extends Entity> List<T> filterResults(Map<String, String> params, Class <? extends T > entityClass, List<Predicate<Entity>> inputList, String type, World worldIn, BlockPos position)
     {
         List<T> list = Lists.<T>newArrayList();
@@ -726,6 +747,9 @@ public class EntitySelector
         return TOKEN_PATTERN.matcher(selectorStr).matches();
     }
 
+    /**
+     * Parses the given argument string, turning it into a HashMap&lt;String, String&gt; of name-&gt;value.
+     */
     private static Map<String, String> getArgumentMap(@Nullable String argumentString)
     {
         Map<String, String> map = Maps.<String, String>newHashMap();

@@ -60,6 +60,7 @@ public class ResourcePackRepository
     public final MetadataSerializer rprMetadataSerializer;
     private IResourcePack resourcePackInstance;
     private final ReentrantLock lock = new ReentrantLock();
+    /** ResourcesPack currently beeing downloaded */
     private ListenableFuture<Object> downloadingPacks;
     private List<ResourcePackRepository.Entry> repositoryEntriesAll = Lists.<ResourcePackRepository.Entry>newArrayList();
     private List<ResourcePackRepository.Entry> repositoryEntries = Lists.<ResourcePackRepository.Entry>newArrayList();

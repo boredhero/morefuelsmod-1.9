@@ -22,6 +22,7 @@ public abstract class MobSpawnerBaseLogic
 {
     /** The delay to spawn. */
     private int spawnDelay = 20;
+    /** List of minecart to spawn. */
     private final List<WeightedSpawnerEntity> minecartToSpawn = Lists.<WeightedSpawnerEntity>newArrayList();
     private WeightedSpawnerEntity randomEntity = new WeightedSpawnerEntity();
     /** The rotation of the mob inside the mob spawner */

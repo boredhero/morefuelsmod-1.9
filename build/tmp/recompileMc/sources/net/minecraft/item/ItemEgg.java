@@ -19,6 +19,9 @@ public class ItemEgg extends Item
         this.setCreativeTab(CreativeTabs.MATERIALS);
     }
 
+    /**
+     * Called when the equipped item is right clicked.
+     */
     public ActionResult<ItemStack> onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         if (!playerIn.capabilities.isCreativeMode)
